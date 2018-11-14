@@ -1,0 +1,37 @@
+<!-- En una página con muchas imágenes mostrar una alerta cuando esté
+cargado el DOM y otra después que las imágenes se hayan cargado.
+
+Tip: Investigar el evento window.onload
+
+-->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+
+</head>
+
+<body>
+    <img src="https://picsum.photos/200/300" />
+    <img src="https://picsum.photos/200/300" />
+    <img src="https://picsum.photos/200/300" />
+    <img src="https://picsum.photos/200/300" />
+    <img src="https://picsum.photos/200/300" />
+    <img src="https://picsum.photos/200/300" />
+    <img src="https://picsum.photos/200/300" />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            alert('hola ready')
+        });
+
+        $(window).on("load", function() {
+            alert('hola')
+        });
+    </script>
+</body>
+
+</html>
